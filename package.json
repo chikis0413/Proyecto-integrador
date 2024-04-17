@@ -1,0 +1,40 @@
+{
+  "name": "proyecto_mvc",
+  "version": "1.0.0",
+  "description": "cogela suave",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js",
+    "server": "nodemon ./index.js",
+    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch"
+  },
+  "keywords": [
+    "MVC",
+    "Pug",
+    "Tailwind",
+    "MySQL",
+    "Sequelize"
+  ],
+  "author": "Dayana Guillen",
+  "license": "ISC",
+  "dependencies": {
+    "2": "^3.0.0",
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.1",
+    "express-validator": "^7.0.1",
+    "lodash.set": "^4.3.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.2",
+    "nodemailer": "^6.9.13",
+    "pug": "^3.0.2",
+    "sequelize": "^6.37.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.1"
+  }
+}

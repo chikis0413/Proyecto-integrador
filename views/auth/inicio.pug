@@ -1,0 +1,49 @@
+extends ../layout/index
+
+block contenido
+    header(style="background-color: #025564; color: white; padding: 1em; margin-top: 20px;")
+        .banner-content(style="height: 100%; display: flex; justify-content: space-between; align-items: center;")
+            .logo(style="max-width: 80px; margin-right: 0px;")
+                img(src="/img/LOGOBANNER.png", alt="Logo" style="max-width: 100%;")
+            nav(style="text-align: right;")
+                ul(style="list-style-type: none; margin: 0; padding: 0;")
+                    li(style="display: inline; margin-right: 10px; position: relative;")
+                        a(href="inicio", style="text-decoration: none; color: white;") Inicio |
+                    li(style="display: inline; margin-right: 10px; position: relative;")
+                        a(href="registro", style="text-decoration: none; color: white;") Registrarme |
+                    li(style="display: inline; margin-right: 10px; position: relative;")
+                        a(href="login", style="text-decoration: none; color: white;") Iniciar sesión
+
+    .py-5
+        .container(style="width: 80%; margin: 0 auto; background-color: transparent; display: flex; justify-content: center; align-items: center;")
+            .left-column
+                .image-container(style="width: 300px; display: flex; justify-content: center; align-items: center;")
+                    img(src="/img/LOGOINICIO.png", alt="Cógela suave")
+            .right-column(style="flex: 1; padding: 60px; background-color: transparent; text-align: rigth;")
+                .text-container
+                    h3.text-1xl.my-10.font-bold.text-left ¿Cómo se puede ayudar a los estudiantes de la Universidad San Buenaventura de Bogotá, para el monitoreo y seguimiento de sus emociones?
+                    p.text-1xl.my-10.font-normal.text-left Desarrollo de una plataforma tecnológica, para monitorear el estado de la salud mental de los estudiantes de la Universidad San Buenaventura de Bogotá
+                .button-container(style="margin-top: 20px; display:")
+                    button(type="button", onclick="window.open('https://app.visily.ai/projects/36201556-cf7e-4374-ae3d-c19e97998a48/boards/478465/presenter?play-mode=Prototype', '_blank')", style="padding: 10px 20px; font-size: 16px; background-color: #025564; color: #ffffff; border: none; border-radius: 5px; cursor: pointer;") Mocap
+        
+        .container(style="width: 80%; margin: 0 auto; background-color: transparent; display: flex; justify-content: center; align-items: center;")
+            .left-column
+                .image-container(style="width: 300px; display: flex; justify-content: center; align-items: center;")
+                    img(src="/img/EQUIPO.png", alt="EQUIPO")
+            .right-column(style="flex: 1; padding: 60px; background-color: transparent; text-align: rigth;")
+                .text-container
+                    h3.text-1xl.my-10.font-bold.text-left ¿Quienes somos?
+                    p.text-1xl.my-10.font-normal.text-left Somos un grupo de estudiantes comprometidos con la salud mental de nuestros compañeros universitarios. Queremos incentivar y promover la atención y cuidado de su bienestar para asegurarnos de que tengan acceso a los recursos necesarios para enfrentar los desafíos académicos y personales. Juntos, podemos construir una comunidad universitaria más saludable y feliz.
+                
+        .container(style="width: 80%; margin: 0 auto; background-color: transparent; display: flex; justify-content: center; align-items: center;")
+            .left-column
+                .text-container
+                    h3.text-2xl.my-10.font-bold.text-left Documentación de Cógela suave
+            .right-column(style="flex: 1; padding: 20px; background-color: transparent; text-align: rigth;")
+                .button-container(style="margin-top: 20px; display: flex; justify-content: center;")
+                    button(type="button", onclick="window.open('https://drive.google.com/file/d/1PB4y9h5PcPNtg3IP2F33L_Jn9Ir6m49x/view', '_blank')", style="padding: 10px 20px; font-size: 16px; background-color: #025564; color: #ffffff; border: none; border-radius: 5px; cursor: pointer;") Documentación
+
+    .py-5
+
+    footer(style="background-color: #025564; color: white; text-align: center; padding: 1em;")
+        p &copy; 2024 App Cógela suave

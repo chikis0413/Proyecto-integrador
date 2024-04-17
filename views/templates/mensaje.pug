@@ -1,0 +1,26 @@
+extends ../layout/index
+
+block contenido
+    header(style="background-color: #025564; color: white; padding: 1em; margin-top: 20px;")
+        .banner-content(style="height: 100%; display: flex; justify-content: space-between; align-items: center;")
+            .logo(style="max-width: 80px; margin-right: 0px;")
+                img(src="/img/LOGOBANNER.png", alt="Logo" style="max-width: 100%;")
+
+
+    .py-5
+        .container(style="width: 80%; margin: 0 auto; background-color: transparent; display: flex; justify-content: center; align-items: center;")
+            .left-column
+                .image-container(style="width: 150px; display: flex; justify-content: center; align-items: center;")
+                    img(src="/img/LOGOINICIO.png", alt="Cógela suave")
+            .right-column(style="flex: 1; padding: 60px; background-color: transparent; text-align: rigth;")
+                .text-container
+                    h1.text-100xl.my-10.font-bold.text-left Cuenta creada correctamente
+                    p.text-79xl.my-10.font-normal.text-left Hemos creado tu usuario, ya podrás acceder a tu perfil
+                            li(style="display: inline; margin-right: 10px; position: relative;")
+                                a(href="login", style="text-decoration: none; color: red;") Iniciar sesión aquí
+        
+
+    .py-5
+
+    footer(style="background-color: #025564; color: white; text-align: center; padding: 1em;")
+        p &copy; 2024 App Cógela suave

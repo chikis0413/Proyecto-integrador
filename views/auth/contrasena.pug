@@ -1,0 +1,37 @@
+extends ../layout/index
+
+block contenido
+
+   header(style="background-color: #025564; color: white; padding: 1em; margin-top: 20px;")
+      .banner-content(style="height: 100%; display: flex; justify-content: space-between; align-items: center;")
+         .logo(style="max-width: 80px; margin-right: 0px;")
+            img(src="/img/LOGOBANNER.png", alt="Logo" style="max-width: 100%;")
+         nav(style="text-align: rigth;")
+            ul(style="list-style-type: none; margin: 0; padding: 0;")
+            li(style="display: inline; margin-right: 10px; position: relative;")
+               a(href="inicio", style="text-decoration: none; color: white;") Inicio |
+            li(style="display: inline; margin-right: 10px; position: relative;")
+               a(href="registro", style="text-decoration: none; color: white;") Registrarse
+
+
+   .py-10
+      h1.text-center.text-4xl.font-extrabold Recupera tu contraseña 
+
+      .mt-8.mx-auto.max-w-md
+         .bg-white.py-8.px-4.shadow
+            form
+               div.mt-5
+                  label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="password") Contraseña
+                  input#password.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Contraseña" type="password" name="password")
+
+               div.flex.items-center.justify-between.mt-5
+                  a.text-gray-500.text-xs(href="/auth/login") ¿Ya tienes cuenta? Inicia sesión
+                  a.text-gray-500.text-xs(href="/auth/registro") Crear cuenta
+
+               div.mt-5
+               input(class="w-full bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 cursor-pointer" type="submit" value="Recupera tu contraseña")
+
+   .py-5
+
+    footer(style="background-color: #025564; color: white; text-align: center; padding: 1em;")
+        p &copy; 2024 App Cógela suave
